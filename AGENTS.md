@@ -68,8 +68,8 @@ computer with adb, and the person does the taps on the TV.
    short list of promo apps is turned off (never uninstalled); *Original* brings it all back. Picture, sound, network
    and accounts don't change. On Google TV, voice search results for films and shows come from Google's home screen,
    so they don't show while Super TV is on. On TCL, the remote's Netflix, YouTube and Prime buttons keep working
-   through a small accessibility service that only reads those buttons. On Xiaomi TVs whose remote has no Home
-   button, the Mi button opens Super TV.
+   through a small accessibility service that only reads those buttons. On Xiaomi TVs, the remote's Mi or PatchWall
+   button opens Super TV instead of PatchWall.
 10. **Open it and let go:** `adb -s <IP>:5555 shell am start -n io.supertv/.SettingsActivity`, then
     `adb disconnect <IP>:5555`. Disconnect before they switch: on Android 8 to 10 the TV can hand its next
     *Allow USB debugging?* answer to a computer that's still connected instead of to Super TV.

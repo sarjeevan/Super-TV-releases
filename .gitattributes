@@ -1,0 +1,3 @@
+# The .bat keeps its CRLF line ends (Windows wants them); the scripts stay LF
+*.bat -text
+*.sh text eol=lf

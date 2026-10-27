@@ -82,8 +82,9 @@ computer with adb, and the person does the taps on the TV.
       Networks saved then but out of range don't show there: `adb -s <IP>:5555 shell dumpsys wifi`, find the blocks
       with `cname=com.google.android.tungsten.setupwraith` (each starts with its `ID:`) and, with their OK,
       `adb -s <IP>:5555 shell cmd wifi forget-network <id>`.
-12. **Check:** connect again; `adb -s <IP>:5555 logcat -d -s SuperTV` shows what the switch did (Hisense keeps only
-    errors: `adb -s <IP>:5555 shell setprop log.tag.SuperTV I` first, then switch again). Then
+12. **Check:** connect again; `adb -s <IP>:5555 logcat -d -s SuperTV` shows what the switch did. Hisense and Xiaomi
+    keep only errors: if it's empty, `adb -s <IP>:5555 shell setprop log.tag.SuperTV I` first (it holds until the TV
+    restarts), and read it again after the next thing that goes wrong. Then
     `adb disconnect <IP>:5555`.
 
 ## The test build (only when they ask for it)

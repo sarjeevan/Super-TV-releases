@@ -86,6 +86,20 @@ computer with adb, and the person does the taps on the TV.
     errors: `adb -s <IP>:5555 shell setprop log.tag.SuperTV I` first, then switch again). Then
     `adb disconnect <IP>:5555`.
 
+## The test build (only when they ask for it)
+
+Before a release, the person who makes Super TV tries it on their own TV as a test build: the `test` pre-release
+here. Install it only when they ask for the test build, and only on the TV they name.
+
+- The same steps, with the test APK in step 4:
+  `curl -fL -o SuperTV.apk https://github.com/sarjeevan/Super-TV-releases/releases/download/test/SuperTV.apk`.
+  If Super TV is already on, `adb install -r` replaces it in place, and it stays on: steps 9 to 11 are only for a
+  TV that doesn't have it yet.
+- Its version ends in `-test.<number>` (Super TV → Updates shows it). The TV never installs a test build by itself,
+  and the next release replaces it overnight like on every other TV.
+- To leave it before that release: an older version can't go over it. *Original* on the TV first, then
+  `adb uninstall io.supertv` with their OK, and install the latest release (step 4's normal APK).
+
 ## Afterwards
 
 - **Updates** come by themselves at night, with the TV in standby and nothing playing. Super TV → Updates →

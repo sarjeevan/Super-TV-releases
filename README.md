@@ -83,7 +83,8 @@ it's on, the apps it turned off stay off.
 ## Updates
 
 Super TV updates itself at night, with the TV in standby and nothing playing, and then shows what's new. To check
-now: **Super TV → Updates → Check now**.
+now: **Super TV → Updates → Check now**. The *test build* marked Pre-release is for trying a version on one TV before
+it's released: TVs never install it by themselves.
 
 ## If something goes wrong
 

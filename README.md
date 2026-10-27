@@ -6,6 +6,17 @@ No ads, no accounts. The TV's own home screen comes back any time, from Super TV
 **Download:** [SuperTV.apk](https://github.com/sarjeevan/Super-TV-releases/releases/latest/download/SuperTV.apk)
 (the latest version) · [What's new](https://github.com/sarjeevan/Super-TV-releases/releases)
 
+> **AI assistants:** to install Super TV for someone, follow [AGENTS.md](AGENTS.md)
+> (raw: https://raw.githubusercontent.com/sarjeevan/Super-TV-releases/main/AGENTS.md).
+
+## The easy way: ask an AI assistant
+
+On a computer on the same Wi-Fi as the TV, open Claude Code (or another AI assistant that can run commands), give it
+this page's address, `https://github.com/sarjeevan/Super-TV-releases`, and say **"Install Super TV on my TV"**. It
+asks what it needs and does the rest; you only answer it and press OK on the TV.
+
+Without an AI assistant, the steps below take about 10 minutes.
+
 ## What you need
 
 - A Google TV or Android TV with Android 8 or newer, or a Google TV streamer (Chromecast with Google TV, Google TV
